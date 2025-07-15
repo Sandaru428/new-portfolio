@@ -1,6 +1,5 @@
 "use client";
 import { GlobeComponent } from "./GlobeComponent";
-import { AnimatedTestimonialsDemo } from "./Cards";
 import { ContactForm } from "./ContactForm";
 import { Tab } from "./tab";
 import { TextFlip } from "./Textflip";
@@ -13,7 +12,7 @@ export function Tabs() {
   const [copied, setcopied] = useState(false);
 
   const handleCopy = () => {
-    alert("Function called!"); // Add this line temporarily
+    alert("Function called!");
     navigator.clipboard.writeText("chamarasudusinghe428@gmail.com");
     setcopied(true);
     console.log("Copied");
@@ -58,7 +57,7 @@ export function Tabs() {
 
             <div>
               <MagicButton
-                title='Copy My Email'
+                title={copied ? 'Email Copied!' : 'Copy My Email'}
                 icon={<IoCopyOutline />}
                 position="left"
                 otherClasses="bg-[#161A31]"

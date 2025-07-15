@@ -5,7 +5,6 @@ import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { cn } from "@/lib/utils";
 import {
-  IconBrandGithub,
   IconBrandLinkedin,
   IconBrandTelegram,
   IconBrandWhatsapp,
@@ -53,7 +52,7 @@ export function ContactForm() {
     <>
       
       <p className="w-full flex justify-center p-2 text-center text-lg text-white">
-          Fill out the form below and we'll get back to you as soon as possible
+          Fill out the form below and we&apos;ll get back to you as soon as possible
       </p>
 
       <div className="shadow-input mx-auto w-[95vw] sm:w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] border border-white/10 md:rounded-2xl p-2 sm:p-6 md:p-8 rounded-3xl mb-15 shadow-2xl max-h-[70vh] overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-white/20 [&::-webkit-scrollbar-thumb]:rounded-full">
@@ -103,15 +102,6 @@ export function ContactForm() {
     </>
   );
 }
-
-const BottomGradient = () => {
-  return (
-    <>
-      <span className="absolute inset-x-0 -bottom-px block h-px w-full bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-0 transition duration-500 group-hover/btn:opacity-100" />
-      <span className="absolute inset-x-10 -bottom-px mx-auto block h-px w-1/2 bg-gradient-to-r from-transparent via-indigo-500 to-transparent opacity-0 blur-sm transition duration-500 group-hover/btn:opacity-100" />
-    </>
-  );
-};
 
 const LabelInputContainer = ({
   children,
